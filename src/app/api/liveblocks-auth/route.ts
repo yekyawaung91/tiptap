@@ -8,7 +8,7 @@ import { getRandomUser } from "@/database";
  */
 
 const liveblocks = new Liveblocks({
-  secret: process.env.LIVEBLOCKS_SECRET_KEY!,
+  secret: 'sk_dev_hCuT4Z_BLQszpy7iZ-SmRapjsUuNCm6frUGR_c15ykEjYp316ano0EZU80wiGc6F',
 });
 
 export async function POST(request: NextRequest) {
