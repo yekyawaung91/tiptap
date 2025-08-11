@@ -1,66 +1,66 @@
 const USER_INFO: Liveblocks["UserMeta"][] = [
   {
+    id: "cat@example.com",
+    info: {
+      name: "Cat",
+      color: "#D583F0",
+      avatar: "/avatars/cat.png",
+    },
+  },
+  {
+    id: "fox@example.com",
+    info: {
+      name: "Fox",
+      color: "#F08385",
+      avatar: "/avatars/fox.png",
+    },
+  },
+  {
     id: "giraffe@example.com",
     info: {
       name: "Giraffe",
-      color: "#D583F0",
-      avatar: "/avatars/Giraffe.png",
-    },
-  },
-  {
-    id: "octopus@example.com",
-    info: {
-      name: "Octopus",
-      color: "#F08385",
-      avatar: "/avatars/Octopus.png",
-    },
-  },
-  {
-    id: "falcon@example.com",
-    info: {
-      name: "Falcon",
       color: "#F0D885",
-      avatar: "/avatars/Panda.png",
+      avatar: "/avatars/giraffe.png",
+    },
+  },
+  {
+    id: "gorilla@example.com",
+    info: {
+      name: "Gorilla",
+      color: "#85EED6",
+      avatar: "/avatars/gorilla.png",
     },
   },
   {
     id: "koala@example.com",
     info: {
       name: "Koala",
-      color: "#85EED6",
-      avatar: "/avatars/Koala.png",
+      color: "#85BBF0",
+      avatar: "/avatars/koala.png",
+    },
+  },
+  {
+    id: "lion@example.com",
+    info: {
+      name: "Lion",
+      color: "#8594F0",
+      avatar: "/avatars/lion.png",
     },
   },
   {
     id: "panda@example.com",
     info: {
       name: "Panda",
-      color: "#85BBF0",
-      avatar: "/avatars/Panda.png",
-    },
-  },
-  {
-    id: "otter@example.com",
-    info: {
-      name: "Otter",
-      color: "#8594F0",
-      avatar: "/avatars/Otter.png",
-    },
-  },
-  {
-    id: "sloth@example.com",
-    info: {
-      name: "Sloth",
       color: "#85DBF0",
-      avatar: "/avatars/Panda.png",
+      avatar: "/avatars/panda.png",
     },
   },
   {
-    id: "Hedgehog@example.com",
+    id: "tiger@example.com",
     info: {
-      name: "hedgehog",
+      name: "Tiger",
       color: "#87EE85",
-      avatar: "/avatars/Panda.png",
+      avatar: "/avatars/tiger.png",
     },
   },
 ];
