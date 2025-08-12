@@ -5,6 +5,8 @@ import { RoomProvider } from "@liveblocks/react/suspense";
 import { useSearchParams } from "next/navigation";
 import { ClientSideSuspense } from "@liveblocks/react";
 import { DocumentSpinner } from "@/primitives/Spinner";
+import { LiveMap } from "@liveblocks/core";
+import { Loading } from "@/components/Loading";
 
 export function Room({ children }: { children: ReactNode }) {
   const roomId = useExampleRoomId("liveblocks:examples:nextjs-tiptap-advanced");
@@ -12,9 +14,8 @@ export function Room({ children }: { children: ReactNode }) {
   return (
     <RoomProvider
       id={roomId}
-      initialPresence={{
-        cursor: null,
-      }}
+      initialPresence={{ cursor: null, presence: undefined }}
+      initialStorage={{ records: new LiveMap() }}
     >
       <ClientSideSuspense fallback={<DocumentSpinner />}>
         {children}

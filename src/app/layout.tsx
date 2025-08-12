@@ -5,6 +5,7 @@ import "../styles/text-editor.css";
 import "@liveblocks/react-ui/styles.css";
 import "@liveblocks/react-ui/styles/dark/attributes.css";
 import "@liveblocks/react-tiptap/styles.css";
+import '../styles/custom.css';
 
 export const metadata = {
   title: "Liveblocks",
