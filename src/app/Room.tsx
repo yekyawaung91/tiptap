@@ -14,7 +14,7 @@ export function Room({ children }: { children: ReactNode }) {
   return (
     <RoomProvider
       id={roomId}
-      initialPresence={{ cursor: null, presence: undefined }}
+      initialPresence={{ presence: undefined }}
       initialStorage={{ records: new LiveMap() }}
     >
       <ClientSideSuspense fallback={<DocumentSpinner />}>
